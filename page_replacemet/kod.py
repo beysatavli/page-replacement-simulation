@@ -1,5 +1,19 @@
 class PageReplacementSimulator:
     def __init__(self, capacity: int, reference_string: list[int]):
+        if isinstance(capacity, bool) or not isinstance(capacity, int):
+            raise ValueError("Frame sayısı bir tam sayı olmalıdır.")
+        if capacity <= 0:
+            raise ValueError("Frame sayısı en az 1 olmalıdır.")
+
+        if not isinstance(reference_string, list):
+            raise ValueError("Sayfa referans dizisi bir liste olmalıdır.")
+
+        for page in reference_string:
+            if isinstance(page, bool) or not isinstance(page, int) or page < 0:
+                raise ValueError(
+                    "Sayfa değerleri negatif olmayan tam sayılar olmalıdır."
+                )
+
         self.capacity = capacity
         self.reference_string = reference_string
 

@@ -450,3 +450,7 @@ class PageReplacementUI(ctk.CTk):
             # Kolon oranlarını koru
             for col_idx, weight in enumerate(col_weights):
                 row_frame.grid_columnconfigure(col_idx, weight=weight)
+
+if __name__ == "__main__":
+    app = PageReplacementUI()
+    app.mainloop()
