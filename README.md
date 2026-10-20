@@ -74,7 +74,10 @@ python3 -m pytest -v
 
 Kod geliştirme çalışmaları ayrı Git branch'lerinde yürütülür. Değişiklikler Pull Request üzerinden incelenir ve uygun olduğunda ana dala birleştirilir.
 
-## Sprint 1 Durumu
 
-Bu sürümde proje iskeleti, temel simülasyon akışı ve ilk çalışan demo üzerinde çalışılmaktadır. Tamamlanan özellikler ve test sonuçları, doğrulama sonrasında güncellenecektir.
+## Proje Durumu
+
+Proje kapsamında FIFO, LRU, Optimal ve Second Chance sayfa değiştirme algoritmalarının simülasyonu geliştirilmiştir. Kullanıcı arayüzü üzerinden girdi dizisi ve bellek çerçevesi sayısı belirlenerek simülasyon sonuçları incelenebilir.
+
+Uygulamanın doğruluğu otomatik testlerle kontrol edilmektedir. Test sonuçları, doğrulama sırasında elde edilen gerçek çıktılara göre raporlanır.
 
